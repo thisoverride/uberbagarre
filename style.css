@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+nav > div > a{
+    cursor: pointer;
+}
 .content{
     font-size: 20px;
     color: #ffffff;
@@ -11,6 +14,22 @@
     padding: 15px;
 
 }
+.banner{
+    background-image: url('./img/kung-fu-2198043_1280.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    height: 50vh;
+}
+.banner >div{
+  font-size: 40px;
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* end page */
 footer {
     height:10vh;
     background-color: black;
