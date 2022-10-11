@@ -1,12 +1,8 @@
+
 *{
     padding: 0;
     margin: 0;
 }
-
-.text-w{
-    color: #ffffff;
-}
-
 
 .content{
     font-size: 20px;
@@ -15,4 +11,17 @@
     justify-content: space-around;
     background-color: #000;
     padding: 15px;
+
+
+footer {
+    height:10vh;
+    background-color: black;
+}
+footer > div {
+    color: white;
+}
+.text-w{
+    color: #ffffff;
+
+
 }
