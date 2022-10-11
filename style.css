@@ -1,3 +1,12 @@
+
+footer {
+    height:10vh;
+    background-color: black;
+}
+footer > div {
+    color: white;
+
 .text-w{
     color: #ffffff;
+
 }
