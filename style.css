@@ -21,6 +21,8 @@ nav > div > a{
     border: 1px solid transparent;
     background-color: #ffffff;
     padding: 5px;
+    cursor: pointer;
+    
 }
 .banner{
     background-image: url('./img/kung-fu-2198043_1280.jpg');
