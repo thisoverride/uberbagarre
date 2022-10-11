@@ -103,3 +103,33 @@ footer > div {
 .sub-nav-list > li:last-child {
   padding: 0;
 }
+
+@media (max-width: 1400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .grid .sub-nav1 {
+    grid-column: 1;
+    grid-row: 1/4;
+  }
+
+  .grid .sub-nav2 {
+    grid-column: 1;
+    grid-row: 2/4;
+  }
+
+  .grid .sub-nav3 {
+    grid-column: 1;
+    grid-row: 3/4;
+  }
+
+  .grid .sub-nav4 {
+    grid-column: 1;
+    grid-row: 4/4;
+  }
+
+  .sub-nav-list > li:last-child {
+    margin-bottom: 1em;
+  }
+}
