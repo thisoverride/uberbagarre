@@ -29,7 +29,9 @@ footer > div {
   grid-template-columns: repeat(4, 1fr);
   margin-top: 1em;
 }
-
+.sub-nav h6{
+    font-weight: bold;
+}
 .grid .sub-nav1 {
   grid-row: 1;
   grid-column: 1/4;
@@ -49,3 +51,4 @@ footer > div {
   grid-row: 1;
   grid-column: 4/4;
 }
+
