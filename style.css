@@ -39,9 +39,44 @@ nav > div > a{
 }
 /* end page */
 footer {
-    height:10vh;
-    background-color: black;
+  height: 50vh;
+  background-color: #000;
 }
 footer > div {
-    color: white;
+  color: white;
 }
+.help {
+  color: #fff;
+  text-decoration: none;
+}
+.help :hover {
+  text-decoration: underline;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1em;
+}
+.sub-nav h6{
+    font-weight: bold;
+}
+.grid .sub-nav1 {
+  grid-row: 1;
+  grid-column: 1/4;
+}
+
+.grid .sub-nav2 {
+  grid-row: 1;
+  grid-column: 2/4;
+}
+
+.grid .sub-nav3 {
+  grid-row: 1;
+  grid-column: 3/4;
+}
+
+.grid .sub-nav4 {
+  grid-row: 1;
+  grid-column: 4/4;
+}
+
