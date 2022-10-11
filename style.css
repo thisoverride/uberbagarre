@@ -31,13 +31,26 @@ nav > div > a{
     background-size: cover;
     height: 50vh;
 }
-.banner >div{
+.banner >h1{
   font-size: 40px;
   color: #ffffff;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.img-size{
+  height: 40px;
+  width: 40px;
+}
+
+.info-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 /* end page */
 footer {
