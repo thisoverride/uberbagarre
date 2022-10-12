@@ -5,6 +5,7 @@
   margin: 0;
   font-family: 'uber-move-text', sans-serif;
 }
+
 nav > div > a {
   cursor: pointer;
 }
@@ -31,13 +32,46 @@ nav > div > a {
   background-size: cover;
   height: 50vh;
 }
-.banner > div {
+/*.banner > div { ?? */ 
+
+.content >span{
+    font-size: 17px;
+    border-radius: 30px;
+    color: #000;
+    border: 1px solid transparent;
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+.banner{
+    background-image: url('./img/kung-fu-2198043_1280.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    height: 50vh;
+}
+.banner >h1{
+
   font-size: 40px;
   color: #ffffff;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.img-size{
+  height: 40px;
+  width: 40px;
+}
+
+.info-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 /* end page */
 footer {
