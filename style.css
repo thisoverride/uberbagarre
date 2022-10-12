@@ -1,9 +1,10 @@
-@import url('http://fonts.cdnfonts.com/css/uber-move-text');
+/* @import url('http://fonts.cdnfonts.com/css/uber-move-text?styles=70998,70997,70995'); */
 
+                
 * {
   padding: 0;
   margin: 0;
-  font-family: 'uber-move-text', sans-serif;
+  font-family: "uber-move-text", sans-serif;
 }
 
 nav > div > a {
@@ -32,27 +33,25 @@ nav > div > a {
   background-size: cover;
   height: 50vh;
 }
-/*.banner > div { ?? */ 
+/*.banner > div { ?? */
 
-.content >span{
-    font-size: 17px;
-    border-radius: 30px;
-    color: #000;
-    border: 1px solid transparent;
-    background-color: #ffffff;
-    padding: 5px;
-    cursor: pointer;
-    
+.content > span {
+  font-size: 17px;
+  border-radius: 30px;
+  color: #000;
+  border: 1px solid transparent;
+  background-color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
 }
-.banner{
-    background-image: url('./img/kung-fu-2198043_1280.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
-    height: 50vh;
+.banner {
+  background-image: url("./img/kung-fu-2198043_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
 }
-.banner >h1{
-
+.banner > h1 {
   font-size: 40px;
   color: #ffffff;
   height: 100%;
@@ -61,23 +60,25 @@ nav > div > a {
   align-items: center;
 }
 
-.img-size{
+.img-size {
   height: 40px;
   width: 40px;
 }
 
-.info-content{
+.info-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
+
 /* end page */
 footer {
   /* height: 50vh; */
   background-color: #000;
-  padding-bottom: 5em;
+  padding-bottom: 4em;
 }
 footer > div {
   color: white;
@@ -93,7 +94,7 @@ footer > div {
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 100px 10px;
+  grid-template-rows: 1fr 10px;
   margin-top: 1em;
 }
 .sub-nav h6 {
@@ -135,16 +136,43 @@ footer > div {
   text-decoration: none;
 }
 .sub-nav-list > li > a:hover {
-  color: rgb(218, 218, 218);
+  color: #AFAFAF;
 }
 .sub-nav-list > li:last-child {
   padding: 0;
 }
+#copyright {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  padding-top: 2em;
+  font-size: smaller;
+  color: #AFAFAF;
+}
 
+.credit {
+  grid-row: 2;
+  grid-column: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 2em;
+}
+
+.credit > li{
+  list-style: none;
+  font-size: smaller;
+}
+.credit > li > a {
+  color: #AFAFAF;
+  text-decoration: none;
+}
+.credit > li > a:hover {
+  color: #545454;
+}
 @media (max-width: 1400px) {
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr) 10px;
   }
   .grid .sub-nav1 {
     grid-column: 1;

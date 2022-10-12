@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS only -->
+
+    <link rel="stylesheet" href="style.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="http://fonts.cdnfonts.com/css/uber-move-text?styles=70998,70997,70995"
+      rel="stylesheet"
+    />
     <title>Uber Bagarre</title>
   </head>
-
   <body>
     <!-- <nav>
       <div class="content">
@@ -27,12 +33,14 @@
         </div>
       </div>
     </nav> -->
+
     <nav>
       <div class="content">
         <a>Uber Bagarre</a>
         <span>Contactez nous</span>
       </div>
     </nav>
+
     <div class="banner">
       <h1>Vos combats n'ont jamais été aussi simple.</h1>
     </div>
@@ -108,10 +116,10 @@
             <h6>Citoyen du monde</h6>
             <ul class="sub-nav-list">
               <li><a href="#">Hagra internationnale</a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#">....</a></li>
+              <li><a href="#"></a>Sécurité</li>
+              <!-- <li><a href="#">....</a></li>
               <li><a href="#">.....</a></li>
-              <li><a href="#">......</a></li>
+              <li><a href="#">......</a></li> -->
             </ul>
           </div>
           <div class="sub-nav sub-nav4">
@@ -119,15 +127,25 @@
             <ul class="sub-nav-list">
               <li><a href="#">Les meilleurs combattants de votre ville</a></li>
               <li><a href="#">Battez vous dans le monde entier</a></li>
-              <li><a href="#">....</a></li>
+              <!-- <li><a href="#">....</a></li>
               <li><a href="#">.....</a></li>
-              <li><a href="#">......</a></li>
+              <li><a href="#">......</a></li> -->
             </ul>
           </div>
+          <p id="copyright"></p>
+          <ul class="credit">
+            <li><a href="#">Confidentialité</a></li>
+            <li><a href="#">Accessibilité</a></li>
+            <li><a href="#">Conditions</a></li>
+          </ul>
         </div>
       </div>
     </footer>
-
+    <script>
+      let date = new Date();
+      document.getElementById("copyright").innerHTML =
+        "&#169; " + date.getFullYear() + " Uber Bagarre Inc.";
+    </script>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
