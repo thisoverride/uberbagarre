@@ -1,6 +1,5 @@
 /* @import url('http://fonts.cdnfonts.com/css/uber-move-text?styles=70998,70997,70995'); */
 
-                
 * {
   padding: 0;
   margin: 0;
@@ -72,52 +71,73 @@ nav > div > a {
   align-items: center;
   text-align: center;
 }
+section {
+  background-color: #f6f6f6;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+.signup-banner {
+  display: flex;
+  justify-content: space-around;
+}
+.signup-banner > a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}
+.signup-banner > a:hover {
+  color: #000;
+}
+.signup-banner > a > h2 {
+  font-family: "uber-move-text", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  width: 11em;
+  margin-right: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid black;
+}
 
+.signup-banner > a,
+svg {
+  color: #000;
+}
 
 /* end page */
 footer {
   /* height: 50vh; */
   background-color: #000;
-  padding-bottom: 4em;
+  padding-bottom: 3em;
 }
 footer > div {
   color: white;
 }
+.footer-title {
+  font-weight: 400;
+}
+
 .help {
   color: #fff;
   text-decoration: none;
 }
 .help:hover {
   color: #fff;
-  text-decoration: underline;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #fff;
+  /* text-decoration: underline; */
 }
 .grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 10px;
-  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
 }
 .sub-nav h6 {
-  font-weight: bold;
-}
-.grid .sub-nav1 {
-  grid-row: 1;
-  grid-column: 1/4;
-}
-
-.grid .sub-nav2 {
-  grid-row: 1;
-  grid-column: 2/4;
-}
-
-.grid .sub-nav3 {
-  grid-row: 1;
-  grid-column: 3/4;
-}
-
-.grid .sub-nav4 {
-  grid-row: 1;
-  grid-column: 4/4;
+  font-family: "uber-move-text", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .sub-nav-list {
@@ -136,65 +156,53 @@ footer > div {
   text-decoration: none;
 }
 .sub-nav-list > li > a:hover {
-  color: #AFAFAF;
+  color: #afafaf;
 }
 .sub-nav-list > li:last-child {
   padding: 0;
 }
-#copyright {
-  grid-column: 1 / span 2;
-  grid-row: 2;
-  padding-top: 2em;
-  font-size: smaller;
-  color: #AFAFAF;
+.credit,
+.privacy > li > a {
+  font-size: small;
+  color: #afafaf;
 }
-
 .credit {
-  grid-row: 2;
-  grid-column: 4;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding-top: 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+.privacy {
+  padding: 0;
+}
+.privacy > li {
+  display: inline;
+  padding-right: 0.5em;
 }
 
-.credit > li{
-  list-style: none;
-  font-size: smaller;
+.privacy > li:last-of-type {
+  padding: 0;
 }
-.credit > li > a {
-  color: #AFAFAF;
+
+.privacy > li > a {
   text-decoration: none;
 }
-.credit > li > a:hover {
+.privacy > li > a:hover {
   color: #545454;
 }
-@media (max-width: 1400px) {
-  .grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr) 10px;
+
+@media (max-width: 1000px) {
+  .signup-banner,
+  .grid,
+  .credit {
+    flex-direction: column;
   }
-  .grid .sub-nav1 {
-    grid-column: 1;
-    grid-row: 1/4;
+  .signup-banner > a:first-of-type {
+    margin: 0;
+    /* color: red; */
   }
 
-  .grid .sub-nav2 {
-    grid-column: 1;
-    grid-row: 2/4;
-  }
-
-  .grid .sub-nav3 {
-    grid-column: 1;
-    grid-row: 3/4;
-  }
-
-  .grid .sub-nav4 {
-    grid-column: 1;
-    grid-row: 4/4;
-  }
-
-  .sub-nav-list > li:last-child {
-    margin-bottom: 1em;
+  .signup-banner > a {
+    margin-top: 1.5em;
   }
 }
