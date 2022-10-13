@@ -1,16 +1,16 @@
 @font-face {
   font-family: "UberMoveMedium";
-  src: url("/font/UberMoveMedium.otf") format("opentype")
+  src: url("/font/UberMoveMedium.otf") format("opentype");
 }
 @font-face {
   font-family: "UberMoveBold";
-  src: url("/font/UberMoveBold.otf") format("opentype")
+  src: url("/font/UberMoveBold.otf") format("opentype");
 }
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "UberMoveMedium" !important;
+  /* font-family: "UberMoveMedium" !important; */
 }
 
 nav > div > a {
@@ -33,7 +33,7 @@ nav > div > a {
   background-color: #ffffff;
   padding: 5px;
 }
-.content > a > span{
+.content > a > span {
   padding-left: 3px;
   font-family: "UberMoveBold";
 }
@@ -118,24 +118,20 @@ svg {
   color: #000;
 }
 
-.comment img{
+.comment img {
   height: 100px;
   width: 100px;
   border: 2px solid black;
   border-radius: 50%;
   padding: 2px;
 }
-.trustpiolot{
+.trustpiolot {
   display: flex;
   justify-content: space-between;
-
 }
-blockquote{
-  quotes : "«" "»" '"' '"';
-
+blockquote {
+  quotes: "«" "»" '"' '"';
 }
-
-
 
 /* end page */
 footer {
