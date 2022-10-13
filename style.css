@@ -1,14 +1,22 @@
-/* @import url('http://fonts.cdnfonts.com/css/uber-move-text?styles=70998,70997,70995'); */
+@font-face {
+  font-family: "UberMoveMedium";
+  src: url("/font/UberMoveMedium.otf") format("opentype")
+}
+@font-face {
+  font-family: "UberMoveBold";
+  src: url("/font/UberMoveBold.otf") format("opentype")
+}
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "uber-move-text", sans-serif;
+  font-family: "UberMoveMedium";
 }
 
 nav > div > a {
   cursor: pointer;
 }
+
 .content {
   font-size: 20px;
   color: #ffffff;
@@ -25,12 +33,17 @@ nav > div > a {
   background-color: #ffffff;
   padding: 5px;
 }
+.content > a > span{
+  padding-left: 3px;
+  font-family: "UberMoveBold";
+}
 .banner {
   background-image: url("./img/kung-fu-2198043_1280.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 50vh;
+  filter: grayscale(60%);
 }
 /*.banner > div { ?? */
 
@@ -71,7 +84,7 @@ nav > div > a {
   align-items: center;
   text-align: center;
 }
-section {
+#hagar {
   background-color: #f6f6f6;
   padding-top: 2.5em;
   padding-bottom: 2.5em;
@@ -104,6 +117,25 @@ section {
 svg {
   color: #000;
 }
+
+.comment img{
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 2px;
+}
+.trustpiolot{
+  display: flex;
+  justify-content: space-between;
+
+}
+blockquote{
+  quotes : "«" "»" '"' '"';
+
+}
+
+
 
 /* end page */
 footer {
