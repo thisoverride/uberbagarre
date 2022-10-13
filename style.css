@@ -1,16 +1,16 @@
 @font-face {
   font-family: "UberMoveMedium";
-  src: url("/font/UberMoveMedium.otf") format("opentype");
+  src: url("./font/UberMoveMedium.otf") format("opentype");
 }
 @font-face {
   font-family: "UberMoveBold";
-  src: url("/font/UberMoveBold.otf") format("opentype");
+  src: url("./font/UberMoveBold.otf") format("opentype");
 }
 
 * {
   padding: 0;
   margin: 0;
-  /* font-family: "UberMoveMedium" !important; */
+  font-family: "UberMoveMedium" !important;
 }
 
 nav > div > a {
@@ -103,7 +103,6 @@ nav > div > a {
   color: #000;
 }
 .signup-banner > a > h2 {
-  font-family: "uber-move-text", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 44px;
