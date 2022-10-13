@@ -10,7 +10,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "UberMoveMedium";
+  font-family: "UberMoveMedium" !important;
 }
 
 nav > div > a {
