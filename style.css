@@ -36,6 +36,7 @@ nav > div > a {
 .content > a > span {
   padding-left: 3px;
   font-family: "UberMoveBold";
+  font-size: 22px;
 }
 .banner {
   background-image: url("./img/kung-fu-2198043_1280.jpg");
@@ -161,7 +162,6 @@ footer > div {
   margin-top: 3em;
 }
 .sub-nav h6 {
-  font-family: "uber-move-text", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
